@@ -1,0 +1,163 @@
+{
+  "menu": [{
+      "title": "主页",
+      "image": "images/icon/1006.png",
+      "url": "/"
+    },
+    {
+      "title": "限时活动",
+      "image": "images/icon/1004.png",
+      "url": "/flash-activities",
+      "submenu": [{
+        "title": "本期活动",
+        "url": "/flash-activities/current"
+      }]
+    },
+    {
+      "title": "关卡攻略",
+      "image": "images/icon/1006.png",
+      "url": "/mainline",
+      "submenu": [{
+          "title": "普通",
+          "url": "/mainline/normal",
+          "submenu": [{
+            "title": "快速通关",
+            "url": "/mainline/normal/fast"
+          }, {
+            "title": "三星完美通关",
+            "url": "/mainline/normal/perfect"
+          }]
+        },
+        {
+          "title": "精英",
+          "url": "/mainline/hard",
+          "submenu": [{
+            "title": "快速通关",
+            "url": "/mainline/hard/fast"
+          }, {
+            "title": "三星完美通关",
+            "url": "/mainline/hard/perfect"
+          }]
+        }, {
+          "title": "拍摄副本",
+          "url": "/mainline/film",
+          "submenu": [{
+            "title": "快速通关",
+            "url": "/mainline/film/fast"
+          }, {
+            "title": "三星完美通关",
+            "url": "/mainline/film/perfect"
+          }]
+        }
+      ]
+    },
+    {
+      "title": "专家培训",
+      "image": "images/icon/1006.png",
+      "url": "/company",
+      "submenu": [{
+          "title": "城市新闻",
+          "url": "/company/citynews"
+        },
+        {
+          "title": "专家",
+          "url": "/company/experts",
+          "submenu": [{
+              "title": "专家列表",
+              "url": "/company/experts/list"
+            },
+            {
+              "title": "人才市场推荐",
+              "url": "/company/experts/recommendation"
+            }
+          ]
+        }, {
+          "title": "部门培训",
+          "url": "/company/training"
+        }
+      ]
+    },
+    {
+      "title": "票房争夺战",
+      "image": "images/icon/1006.png",
+      "url": "/company",
+      "submenu": [{
+          "title": "城市新闻",
+          "url": "/company/citynews"
+        },
+        {
+          "title": "专家",
+          "url": "/company/experts",
+          "submenu": [{
+              "title": "专家列表",
+              "url": "/company/experts/list"
+            },
+            {
+              "title": "人才市场推荐",
+              "url": "/company/experts/recommendation"
+            }
+          ]
+        }, {
+          "title": "部门培训",
+          "url": "/company/training"
+        }
+      ]
+    },
+    {
+      "title": "票房争夺战",
+      "image": "images/icon/1006.png",
+      "url": "/tickets-battle",
+      "submenu": [{
+          "title": "攻略",
+          "url": "/tickets-battle/tips"
+        },
+        {
+          "title": "商店兑换",
+          "url": "/tickets-battle/exchange-store"
+        }
+      ]
+    },
+    {
+      "title": "羁绊",
+      "image": "images/icon/1006.png",
+      "url": "/cards",
+      "submenu": [{
+          "title": "SSR",
+          "url": "/cards/ssr"
+        },
+        {
+          "title": "SR",
+          "url": "/cards/sr"
+        }, {
+          "title": "R",
+          "url": "/cards/r"
+        },
+        {
+          "title": "NH",
+          "url": "/cards/nh"
+        },
+        {
+          "title": "许愿树兑换推荐",
+          "url": "/cards/wishing-tree"
+        }
+      ]
+    },
+    {
+      "title": "其他",
+      "image": "images/icon/1006.png",
+      "url": "/miscellaneous",
+      "submenu": [{
+          "title": "往期活动",
+          "url": "/miscellaneous/past-activities"
+        },
+        {
+          "title": "氪金攻略",
+          "url": "/miscellaneous/money"
+        }, {
+          "title": "功能开放",
+          "url": "/miscellaneous/timeline"
+        }
+      ]
+    }
+  ]
+}

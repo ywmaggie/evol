@@ -2,7 +2,7 @@
   "cards": [{
     "name": "逆风",
     "owner": "白起",
-    "image": "/src/static/images/icon/-1.png",
+    "image": "images/background/1011.png",
     "level": "r",
     "decision": 32,
     "creaticity": 122,
