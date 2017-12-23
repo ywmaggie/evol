@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import MenuItem from './MenuItem';
+import BodyRouter from './BodyRouter';
 
 import '../stylesheets/home.css';
 
@@ -20,6 +21,7 @@ class Home extends React.Component {
         <div className="menu">
           {this.state.menu.map(menuItem => <MenuItem url={menuItem.url} title={menuItem.title}/>)}
         </div>
+        <BodyRouter/>
       </div>
     </Router>;
   }
