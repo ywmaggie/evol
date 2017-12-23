@@ -19,7 +19,6 @@
 }
 
 .menuItem:hover {
-  /* background-color: red; */
   background: radial-gradient(green ,white);
 }
 
