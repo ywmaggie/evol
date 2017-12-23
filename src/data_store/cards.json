@@ -1,0 +1,12 @@
+{
+  "cards": [{
+    "name": "逆风",
+    "owner": "白起",
+    "image": "/src/static/images/icon/-1.png",
+    "level": "r",
+    "decision": 32,
+    "creaticity": 122,
+    "affinity": 22,
+    "execution": 100
+  }]
+}
