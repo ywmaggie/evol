@@ -1,27 +1,25 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import MenuItem from './MenuItem';
+import {BrowserRouter as Router} from 'react-router-dom';
 import BodyRouter from './BodyRouter';
+import MainMenu from './MainMenu';
+import HeaderBanner from './HeaderBanner';
 
-import '../stylesheets/home.css';
+const styles = {
+  wrapper: {
+    margin: "0 auto",
+    width: 1200
+  }
+};
 
 class Home extends React.Component {
-  state = {
-    menu: []
-  };
-
-  componentDidMount() {
-    fetch('/api/menu').then(res => res.json()).then(menu => this.setState({menu}));
-  }
-
   render() {
     return <Router>
-      <div className="wrapper">
-        <div className="header">Link 恋与制作人攻略</div>
-        <div className="menu">
-          {this.state.menu.map(menuItem => <MenuItem url={menuItem.url} title={menuItem.title}/>)}
+      <div style={styles.wrapper}>
+        <HeaderBanner/>
+        <div>
+          <MainMenu/>
+          <BodyRouter/>
         </div>
-        <BodyRouter/>
       </div>
     </Router>;
   }

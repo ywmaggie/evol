@@ -18,8 +18,8 @@ class DataStore {
     return true;
   }
 
-  static loadMenu() {
-    const file = fs.readFileSync('data_store/menu.json', 'utf8');
+  static loadItemsJson() {
+    const file = fs.readFileSync('data_store/items.json', 'utf8');
     return JSON.parse(file);
   }
 }

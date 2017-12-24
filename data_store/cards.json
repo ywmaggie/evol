@@ -1,12 +1,145 @@
 {
-  "cards": [{
-    "name": "逆风",
+  "cards": [
+  {
+    "id": 0,
+    "name": "1",
     "owner": "白起",
-    "image": "images/background/1011.png",
-    "level": "r",
-    "decision": 32,
-    "creaticity": 122,
-    "affinity": 22,
-    "execution": 100
+    "image": "/images/card/54010.png",
+    "fullImage": "/images/fullImage/9053.png",
+    "level": "ssr",
+    "attributes": [5, 32, 46, 33],
+    "upgradeItems": [
+      [
+      {
+        "id": "111001",
+        "count": 3
+      },
+      {
+        "id": "111002",
+        "count": 3
+      },
+      {
+        "id": "111003",
+        "count": 4
+      }]
+    ],
+    "evolveItems": [
+      [
+      {
+        "id": "111004",
+        "count": 3
+      },
+      {
+        "id": "111005",
+        "count": 3
+      },
+      {
+        "id": "111006",
+        "count": 4
+      }]
+    ],
+    "motto": "总有些瞬间，能温暖整个人生。",
+    "keywords": "温暖",
+    "obtainMethods": "许愿树"
+  },
+  {
+    "name": "2",
+    "owner": "白起",
+    "image": "/images/card/54020.png"
+  },
+  {
+    "name": "3",
+    "owner": "白起",
+    "image": "/images/card/54021.png"
+  },
+  {
+    "name": "4",
+    "owner": "白起",
+    "image": "/images/card/54030.png"
+  },
+  {
+    "name": "5",
+    "owner": "白起",
+    "image": "/images/card/54031.png"
+  },
+  {
+    "name": "6",
+    "owner": "白起",
+    "image": "/images/card/54040.png"
+  },
+  {
+    "name": "7",
+    "owner": "白起",
+    "image": "/images/card/54041.png"
+  },
+  {
+    "name": "8",
+    "owner": "白起",
+    "image": "/images/card/54060.png"
+  },
+  {
+    "name": "9",
+    "owner": "白起",
+    "image": "/images/card/54061.png"
+  },
+  {
+    "name": "1",
+    "owner": "周棋洛",
+    "image": "/images/card/53010.png"
+  },
+  {
+    "name": "2",
+    "owner": "周棋洛",
+    "image": "/images/card/53011.png"
+  },
+  {
+    "name": "3",
+    "owner": "周棋洛",
+    "image": "/images/card/53020.png"
+  },
+  {
+    "name": "4",
+    "owner": "周棋洛",
+    "image": "/images/card/53021.png"
+  },
+  {
+    "name": "1",
+    "owner": "许墨",
+    "image": "/images/card/52040.png"
+  },
+  {
+    "name": "2",
+    "owner": "许墨",
+    "image": "/images/card/52041.png"
+  },
+  {
+    "name": "3",
+    "owner": "许墨",
+    "image": "/images/card/52050.png"
+  },
+  {
+    "name": "4",
+    "owner": "许墨",
+    "image": "/images/card/52051.png"
+  },
+  {
+    "name": "1",
+    "owner": "李泽言",
+    "image": "/images/card/51040.png"
+  },
+  {
+    "name": "2",
+    "owner": "李泽言",
+    "image": "/images/card/51041.png"
+  },
+  {
+    "name": "3",
+    "owner": "李泽言",
+    "image": "/images/card/51050.png"
+  },
+  {
+    "name": "4",
+    "owner": "李泽言",
+    "image": "/images/card/51051.png"
   }]
 }
