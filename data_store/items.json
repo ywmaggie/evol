@@ -1,0 +1,38 @@
+{
+  "111001":
+  {
+    "name": "电影票",
+    "image": "/images/items/111001.png",
+    "source": "普通关卡 1-1"
+  },
+  "111002":
+  {
+    "name": "老冰棍",
+    "image": "/images/items/111002.png",
+    "source": "普通关卡 1-2"
+  },
+  "111003":
+  {
+    "name": "帽子",
+    "image": "/images/items/111003.png",
+    "source": "普通关卡 1-3"
+  },
+  "111004":
+  {
+    "name": "雨伞",
+    "image": "/images/items/111004.png",
+    "source": "普通关卡 1-4"
+  },
+  "111005":
+  {
+    "name": "针管",
+    "image": "/images/items/111005.png",
+    "source": "普通关卡 1-5"
+  },
+  "111006":
+  {
+    "name": "望远镜",
+    "image": "/images/items/111006.png",
+    "source": "普通关卡 1-6"
+  }
+}
