@@ -1,16 +1,16 @@
 import React from 'react';
 import Chip from 'material-ui/Chip';
 import {pink50, pink200} from 'material-ui/styles/colors';
-import Chapter1 from './normal/Chapter1';
-import Chapter2 from './normal/Chapter2';
-import Chapter3 from './normal/Chapter3';
-import Chapter4 from './normal/Chapter4';
-import Chapter5 from './normal/Chapter5';
-import Chapter6 from './normal/Chapter6';
-import Chapter7 from './normal/Chapter7';
-import Chapter8 from './normal/Chapter8';
-import Chapter9 from './normal/Chapter9';
-import Chapter10 from './normal/Chapter10';
+import Chapter1 from './hard/Chapter1';
+import Chapter2 from './hard/Chapter2';
+import Chapter3 from './hard/Chapter3';
+import Chapter4 from './hard/Chapter4';
+import Chapter5 from './hard/Chapter5';
+import Chapter6 from './hard/Chapter6';
+import Chapter7 from './hard/Chapter7';
+import Chapter8 from './hard/Chapter8';
+import Chapter9 from './hard/Chapter9';
+import Chapter10 from './hard/Chapter10';
 
 const styles = {
   chip: {
@@ -26,7 +26,7 @@ const styles = {
   }
 };
 
-class MainlineNormal extends React.Component {
+class MainlineHard extends React.Component {
   state = {
     chapter: 0
   };
@@ -84,4 +84,4 @@ class MainlineNormal extends React.Component {
   }
 }
 
-export default MainlineNormal;
+export default MainlineHard;
