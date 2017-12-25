@@ -25,26 +25,25 @@ const styles = {
 
 class CardInfo extends React.Component {
   state = {
-    cards: [],
+    cardInfo: null,
     items: null
   };
 
   componentDidMount() {
-    fetch('/api/cards').then(res => res.json()).then(
-      cards => this.setState({cards})
+    fetch('/api/cards/' + this.props.match.params.cardID).then(res => res.json()).then(
+      cardInfo => this.setState({cardInfo})
     );
     fetch('/api/items').then(res => res.json()).then(
       items => this.setState({items})
     );
-    console.log(this.state.items);
   }
 
   render() {
-    const card = this.state.cards[0];
-    if (!card || !this.state.items) {
+    if (!this.state.cardInfo || !this.state.items) {
       return null;
     }
-    console.log(this.state.items);
+
+    const card = this.state.cardInfo;
     return (
       <div>
         <img alt="cardImage" style={styles.image} src={card.fullImage}/>
@@ -53,7 +52,7 @@ class CardInfo extends React.Component {
             卡牌名称: {card.name}
           </div>
           <div style={styles.singleInfo}>
-            获取方式: {card.obtainMethods}
+            获取方式: {card.source}
           </div>
           <div style={styles.singleInfo}>
             初始属性:

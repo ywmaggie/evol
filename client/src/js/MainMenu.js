@@ -95,12 +95,12 @@ class MainMenu extends React.Component {
                 nestedItems={[
                   <ListItem
                     key={1}
-                    containerElement={<Link to = "/company/experts/list" />}
+                    containerElement={<Link to = "/company/staff/list" />}
                     primaryText="专家列表"
                     leftIcon={icon}/>,
                   <ListItem
                     key={2}
-                    containerElement={<Link to = "/company/experts/recommendation" />}
+                    containerElement={<Link to = "/company/staff/recommendation" />}
                     primaryText="人才市场推荐"
                     leftIcon={icon}/>
                 ]}/>,
@@ -177,7 +177,7 @@ class MainMenu extends React.Component {
                 leftIcon={icon}primaryText="氪金攻略"/>,
               <ListItem
                 key={3}
-                containerElement={<Link to = "/misc/functions" />}
+                containerElement={<Link to = "/misc/functions-unlock" />}
                 primaryText="功能开放"
                 leftIcon={icon}/>
             ]}/>

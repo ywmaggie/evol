@@ -9,7 +9,14 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('/api/cards', function (req, res, next) {
   const cards = dataStore.loadCardJson();
-  res.json(cards.cards);
+  res.json(cards);
+});
+
+app.get('/api/cards/:cardID', function (req, res, next) {
+  console.log(req.params.cardID);
+  const cardInfo = dataStore.loadSingleCardInfo(req.params.cardID);
+  console.log(cardInfo);
+  res.json(cardInfo);
 });
 
 app.get('/api/items', function (req, res, next) {

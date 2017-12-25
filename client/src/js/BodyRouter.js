@@ -3,6 +3,7 @@ import {Route} from 'react-router-dom';
 import CardsGrid from './CardsGrid';
 import CardInfo from './CardInfo';
 import FilmTipsTable from './FilmTipsTable';
+import MainlineNormal from './mainline/MainlineNormal';
 
 const styles = {
   wrapper: {
@@ -39,8 +40,9 @@ class BodyRouter extends React.Component {
             </div>;
           }}/>
         <Route path="/cards/ssr" component={CardsGrid}/>
-        <Route path="/cards/0" component={CardInfo}/>
+        <Route path="/cards/card/:cardID" component={CardInfo}/>
         <Route path="/mainline/film/fast" component={FilmTipsTable}/>
+        <Route path="/mainline/normal/fast" component={MainlineNormal}/>
       </div>
     );
   }

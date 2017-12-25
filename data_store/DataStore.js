@@ -22,6 +22,14 @@ class DataStore {
     const file = fs.readFileSync('data_store/items.json', 'utf8');
     return JSON.parse(file);
   }
+
+  static loadSingleCardInfo(cardID) {
+    const cards = JSON.parse(fs.readFileSync('data_store/cards.json', 'utf8'));
+    if (cards.hasOwnProperty(cardID)) {
+      return cards[cardID];
+    }
+    return null;
+  }
 }
 
 module.exports = DataStore;

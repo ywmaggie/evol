@@ -31,7 +31,7 @@ const styles = {
 
 class CardsGrid extends React.Component {
   state = {
-    cards: [],
+    cards: {},
     selected: 'all'
   };
 
@@ -89,19 +89,20 @@ class CardsGrid extends React.Component {
         </div>
         <GridList cols={4} padding={16} style={styles.girdList}>
           {
-            this.state.cards.filter(
-              card => (this.state.selected === 'all' || card.owner === this.state.selected)
-            ).map(
-              card => <GridTile
-                key={card.image}
-                actionIcon={actionIcon}
-                containerElement={<Link to = {
-                  "/cards/0"
-                } />}
-                title={card.name}
-                subtitle={card.owner}>
-                <img alt="cardImage" src={card.image}/>
-              </GridTile>
+            Object.keys(this.state.cards).filter(cardID => this._filterByOnwer(cardID)).map(
+              cardID => {
+                const card = this.state.cards[cardID];
+                return <GridTile
+                  key={card.image}
+                  actionIcon={actionIcon}
+                  containerElement={<Link to = {
+                    "/cards/card/" + cardID
+                  } />}
+                  title={card.name}
+                  subtitle={card.owner}>
+                  <img alt="cardImage" src={card.image}/>
+                </GridTile>;
+              }
             )
           }
         </GridList>
@@ -111,6 +112,18 @@ class CardsGrid extends React.Component {
 
   _onClickChip(name) {
     this.setState({selected: name})
+  }
+
+  _filterByOnwer(cardID) {
+    if (this.state.selected === 'all') {
+      return true;
+    }
+    if (this.state.cards.hasOwnProperty(cardID)) {
+      if (this.state.cards[cardID].owner === this.state.selected) {
+        return true;
+      }
+    }
+    return false;
   }
 }
 
