@@ -4,6 +4,7 @@ import CardsGrid from './CardsGrid';
 import CardInfo from './CardInfo';
 import FilmTipsTable from './FilmTipsTable';
 import MainlineNormal from './mainline/MainlineNormal';
+import StaffBoard from './staff/StaffBoard';
 import MainlineHard from './mainline/MainlineHard';
 
 const styles = {
@@ -45,6 +46,7 @@ class BodyRouter extends React.Component {
         <Route path="/mainline/film/fast" component={FilmTipsTable}/>
         <Route path="/mainline/normal/fast" component={MainlineNormal}/>
         <Route path="/mainline/hard/fast" component={MainlineHard}/>
+        <Route path="/company/staff/list" component={StaffBoard}/>
       </div>
     );
   }

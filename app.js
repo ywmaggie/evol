@@ -13,15 +13,23 @@ app.get('/api/cards', function (req, res, next) {
 });
 
 app.get('/api/cards/:cardID', function (req, res, next) {
-  console.log(req.params.cardID);
   const cardInfo = dataStore.loadSingleCardInfo(req.params.cardID);
-  console.log(cardInfo);
   res.json(cardInfo);
 });
 
 app.get('/api/items', function (req, res, next) {
   const items = dataStore.loadItemsJson();
   res.json(items);
+});
+
+app.get('/api/staff', function (req, res, next) {
+  const staff = dataStore.loadStaffJson();
+  res.json(staff);
+});
+
+app.get('/api/tags', function (req, res, next) {
+  const tags = dataStore.loadTagsJson();
+  res.json(tags);
 });
 
 // The "catchall" handler: for any request that doesn't match one above, send
